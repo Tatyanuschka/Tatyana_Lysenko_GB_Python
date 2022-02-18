@@ -17,7 +17,7 @@ for i in range(1, 1001, 2):
 print(f'Список из кубов нечетн.чисел от 1 до 1000: {cube_lst}')
 
 cube_lst_sum = digit_sum(cube_lst)
-print(f'список чисел, сумма цифр к-ых делится на 7 без остатка: {cube_lst_sum}')
+print(f'список сумм цифр чисел из списка кубов нечетных чисел от 1 до 1000: {cube_lst_sum}')
 
 result_sum = 0
 for i in range(len(cube_lst)):
