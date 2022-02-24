@@ -12,11 +12,13 @@ while x < len(old_msg):
         x += 5
     elif old_msg[x].isdigit():
         old_msg.insert(x, ' "')
-        old_msg.insert(x + 2, '" ')
-        x += 3
+        old_msg.insert(x + 1, str(int(old_msg[x + 1]) // 10))
+        old_msg.insert(x + 2, str(int(old_msg[x + 2]) % 10))
+        old_msg.insert(x + 3, '" ')
+        del old_msg[x + 4]
+        x += 4
     else:
         old_msg[x] = ' ' + old_msg[x]
         x += 1
 
-print(old_msg)
 print(''.join(old_msg))
