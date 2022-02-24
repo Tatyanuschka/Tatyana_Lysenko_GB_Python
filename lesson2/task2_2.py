@@ -12,5 +12,4 @@ for item in old_msg:
         msg_part = ['"', str(int(item) // 10), str(int(item) % 10), '" ']
         new_msg.extend(msg_part)
 
-print(new_msg)
 print(''.join(new_msg))
