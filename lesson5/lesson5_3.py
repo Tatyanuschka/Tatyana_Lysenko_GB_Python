@@ -7,14 +7,14 @@ classes = [
 ]
 
 result = ((tutors[i], None) if i >= len(classes) else (tutors[i], classes[i]) for i in range(len(tutors)))
-print(*result)
-# print(next(result))
-# print(next(result))
-# print(next(result))
-# print(next(result))
-# print(next(result))
-# print(next(result))
-# print(next(result))
-# print(next(result))
+# print(*result)
+print(next(result))
+print(next(result))
+print(next(result))
+print(next(result))
+print(next(result))
+print(next(result))
+print(next(result))
+print(next(result))
 
 
